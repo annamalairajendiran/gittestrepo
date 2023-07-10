@@ -1,0 +1,18 @@
+git init --> initate the local repo
+git status --> to view the status commits files whether its has been added in tracking or not (Untracked files:
+  		(use "git add <file>..." to include in what will be committed)
+        	gitcommands)
+		exmaple for tracked files :
+git add --> to commit file in git, example commands : git add gitcommands --> here the gitcommands is file i have added
+git status --> here the example of for the the tracked file like below
+		(On branch master
+
+		No commits yet
+
+		Changes to be committed:
+  		(use "git rm --cached <file>..." to unstage)
+        	new file:   gitcommands) 
+git diff --> show the difference what are changes has been made compare with the previous commit
+git add . --> here dot reperesent all files have to commit
+git remote -v --> show the remote repo 
+git remote add "remote url" --> adding the remote repo here

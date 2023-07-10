@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Array of stock prices
+stock_prices=(52.5 50.2 49.8 51.5 53.2)
+
+# Initialize variables
+sum=0
+count=${#stock_prices[@]}
+
+# Calculate the sum of stock prices
+for price in "${stock_prices[@]}"
+do
+  sum=$(echo "scale=2; $sum + $price" | bc)
+done
+
+# Calculate the average
+average=$(echo "scale=2; $sum / $count" | bc)
+
+# Print the result
+echo "Stock prices: ${stock_prices[@]}"
+echo "Average stock price: $average"
