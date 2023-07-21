@@ -16,3 +16,20 @@ git diff --> show the difference what are changes has been made compare with the
 git add . --> here dot reperesent all files have to commit
 git remote -v --> show the remote repo 
 git remote add "remote url" --> adding the remote repo here
+git stash --> this command to used for help to save a file which are not commited to allow another branch to work
+git stash list && git stash show --> show the stash files list
+git stash -u ---> to stash the untracked files
+git status drop --> If you decide you no longer need a particular stash, you can delete it with git stash drop
+
+<<<Example>>
+------------------------------------------------------------
+root@DESKTOP-55D7P74:~/github_tutorial# git stash list
+stash@{0}: WIP on rebase: 92d4c20 for example commit for stash
+stash@{1}: WIP on rebase: 92d4c20 for example commit for stash
+stash@{2}: WIP on rebase: 31673fb the test file added for check rebase function
+root@DESKTOP-55D7P74:~/github_tutorial# git stash drop stash@{0}
+Dropped stash@{0} (69a3dba3dcebe9c5a1e1bc97347e173c86c42cb2)
+root@DESKTOP-55D7P74:~/github_tutorial# git stash list
+stash@{0}: WIP on rebase: 92d4c20 for example commit for stash
+stash@{1}: WIP on rebase: 31673fb the test file added for check rebase function
+------------------------------------------------------------
